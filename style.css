@@ -78,6 +78,7 @@ section img {
   gap: 1rem;
 }
 .content .text h1 {
+  margin-top: 6rem;
   font-weight: 100;
   font-size: 2.5rem;
   line-height: 1.2;
@@ -106,47 +107,70 @@ section img {
   align-items: center;
   gap: 0.8rem;
 }
-.mark{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+.mark {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
-.mark .top-mark{
-    display: flex;
-    justify-content: space-between;
+.mark .top {
+  display: flex;
+  justify-content: space-between;
 }
-.mark .top-mark .top{
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+.mark .top .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
-.mark .top-mark .top p{
-      color: #9b9a97;
-      font-size: 0.8rem;
-      letter-spacing: 1px;
+.mark .top .elem p {
+  color: #9b9a97;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
-.mark .top-mark .top h1{
-    font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f3f1ec;
-    letter-spacing: 1px;
+.mark .top .elem h1 {
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3f1ec;
+  letter-spacing: 1px;
 }
+.mark .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.mark .bottom .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.mark .bottom .elem p {
+  color: #9b9a97;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.mark .bottom .elem h1 {
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3f1ec;
+  letter-spacing: 1px;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 @media (min-width: 1000px) {
   section {
     flex-direction: row;
   }
-  section img{
+  section img {
     width: 50%;
   }
-  section .content{
+  section .content {
     width: 50%;
   }
-  .mark{
+  .mark {
     flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .mark .top-mark{
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
